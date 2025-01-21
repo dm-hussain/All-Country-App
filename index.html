@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Country API</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body >
+    
+  
+    
+    <header class="h-16 shadow-md fixed z-40 top-0 backdrop-blur-md  w-[100vw]">
+      <div
+        class="header-content flex justify-between items-center h-[100%] px-12 md:px-8 mx-auto max-w-[1200px]"
+      >
+        <a class="text-base md:text-2xl  font-bold hover:cursor-pointer" href="/index.html">Where in the world?</a>
+        <p class="dark-mode text-sm md:text-lg font-semibold hover:cursor-pointer">
+          <i class="fa-regular fa-moon"></i> &nbsp Dark Mode
+        </p>
+      </div>
+    </header>
+
+    <div class="pre-loader w-[100%] h-[100vh] bg-[#1B1941]    bg-[url('./preloader.gif')] bg-[length:200px] bg-no-repeat  bg-center ">
+
+    </div>
+
+
+
+    <main class="px-4  md:mt-32  max-w-[1200px] mx-auto">
+      
+    <div class="search-field flex flex-col gap-6 md:gap-4  md:flex-row md:items-center md:justify-between  sticky z-40 top-28  ">
+      <div class="search-box bg-white   md:w-96 h-8 md:h-12 flex items-center border-2 md:shadow-md">
+        
+        <i class="fa-solid fa-magnifying-glass px-4 text-gray-500 md:font-bold"></i>
+        <input id="user-input" type="text" placeholder="Search Here...." class=" w-[100%] h-[100%] outline-none font-semibold md:font-bold text-gray-700">
+      
+      </div>
+
+      <div class="region-box  ">
+        <select name="dropdown" id="dropdown" class="bg-white md:max-w-[25vw] px-4 h-8 text-gray-700  md:h-12 border-2 md:shadow-md">
+          <option   selected disabled>Filter By Region</option>
+          <option value="Africa">Africa</option>
+          <option value="America">America</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
+  </div>
+      <div class="country-section mt-36 md:mt-20 flex flex-wrap justify-center md:justify-between">
+
+
+        <!-- <a href="#" class="country-card w-80 shadow-md rounded-md m-4 overflow-hidden bg-white hover:scale-105 transition-transform duration-300 ease-in-out hover:shadow-lg">
+          <img src="https://flagcdn.com/gs.svg" alt="flag" />
+          <div class="p-6">
+            <p class="font-bold text-xl  mb-6">Germany</p>
+          <p class="font-bold mb-2">Population:  <span class="font-normal">81,71000</span></p>
+          <p class="font-bold mb-2">Region:  <span class="font-normal">Europe</span></p>
+          <p class="font-bold mb-2">Capital:  <span class="font-normal">Berlin</span></p>
+          </div>
+        </a> -->
+
+      </div>
+    </main>
+  </body>
+</html>
